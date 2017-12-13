@@ -15,7 +15,7 @@
       echo 'Bonjour ' . $_POST['civility'] . ' ' . $_POST['lastname'] . ' ' . $_POST['firstname'] . '. Votre fichier est : ' . $_FILES['myFile']['name'];
       $infosfichier = pathinfo($_FILES['myFile']['name']);
     } else {
-      echo 'Ce fichier n\'est pas un fichier PDF !';
+      echo 'Ce fichier n\'est pas un fichier PDF !'; ?> <a href="index.php">Retour</a> <?php
     }
   } else {
     ?>
